@@ -8,9 +8,8 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Gabriel Sobrinho", "Wenderson Malheiros"]
   s.email       = ["gabriel.sobrinho@gmail.com", "wmalheiros@gmail.com"]
-  s.homepage    = "http://rubygems.org/gems/soundex"
-  s.summary     = %q{Soundex finder for ActiveRecord}
-  s.description = %q{Search records using soundex algorithm}
+  s.homepage    = "http://github.com/sobrinho/fonetica"
+  s.summary     = %q{Phonetic finder for ActiveRecord using BUSCABR algorithm}
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
