@@ -19,7 +19,8 @@ class String
   ]
   
   def fonetica
-    word = I18n.transliterate(self).upcase
+    word = self.gsub(/ç/i, 's') # special case
+    word = I18n.transliterate(word).upcase
     
     FONETICA.each do |search, replace|
       word.gsub!(search, replace)
