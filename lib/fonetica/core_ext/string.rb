@@ -9,7 +9,7 @@ class String
     [/G[EI]|[RMN]J/, 'J'],
     [/G[RL]/, 'G'],
     [/C[EIH]/, 'S'],
-    [/CT/, 'T'],
+    [/[PC]T/, 'T'],
     [/CS/, 'S'],
     [/Q|C[AOUK]?/, 'K'],
     [/LH/, 'L'],

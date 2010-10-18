@@ -63,6 +63,13 @@ describe String do
     end
   end
   
+  context 'BT = T' do
+    it '"batista" and "baptista" should fonetica to "BT"' do
+      'batista'.fonetica.should == 'BT'
+      'baptista'.fonetica.should == 'BT'
+    end
+  end
+  
   context 'GA = GO = GU = GL = GR = G' do
     it '"gana" should fonetica to "KMPT"' do
       'gana'.fonetica.should == 'GM'
