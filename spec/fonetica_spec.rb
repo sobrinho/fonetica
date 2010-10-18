@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe String do
+describe 'Fonetica' do
   context 'BR = BL = B' do
     it '"broco" and "bloco" should fonetica to "BK"' do
       'broco'.fonetica.should == 'BK'
@@ -138,7 +138,7 @@ describe String do
     end
   end
   
-  context 'PH = F and PR = P' do
+  context 'PH = F' do
     it '"philipe" and "felipe" should fonetica to "FRP"' do
       'philipe'.fonetica.should == 'FRP'
       'felipe'.fonetica.should == 'FRP'
