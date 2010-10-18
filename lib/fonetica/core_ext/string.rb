@@ -1,3 +1,5 @@
+require 'active_support'
+
 class String
   FONETICA = [
     [/Y/, 'I'],
