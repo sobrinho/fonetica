@@ -7,7 +7,7 @@ module Fonetica
         cattr_accessor :fonetica_column, :fonetica_cache_column
         
         self.fonetica_column = column
-        self.fonetica_cache_column = "#{column}_fonetica"
+        self.fonetica_cache_column = :"fonetica_#{column}"
         
         scope :fonetica, lambda { |fonetica|
           {
