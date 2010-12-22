@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fonetica (0.1.1)
+    fonetica (0.3.0)
       activerecord (>= 3.0.0)
       activesupport (>= 3.0.0)
 
