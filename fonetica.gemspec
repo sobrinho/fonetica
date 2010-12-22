@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Gabriel Sobrinho", "Wenderson Malheiros"]
   s.email       = ["gabriel.sobrinho@gmail.com", "wmalheiros@gmail.com"]
   s.homepage    = "http://github.com/sobrinho/fonetica"
-  s.summary     = %q{Phonetic finder for ActiveRecord using BUSCABR algorithm}
+  s.summary     = %q{BuscaBR algorithm which allow the comparison of words based on their phonetic likeness}
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
