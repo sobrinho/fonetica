@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'Fonetica' do
+describe 'String' do
   context 'BR = BL = B' do
     it '"broco" and "bloco" should fonetica to "BK"' do
       'broco'.foneticalize.should == 'BK'
