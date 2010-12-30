@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fonetica (0.3.0)
+    fonetica (0.3.1)
       activesupport (>= 3.0.0)
       i18n (>= 0.4.1)
 
