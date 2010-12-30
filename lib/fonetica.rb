@@ -5,9 +5,9 @@ require 'fonetica/core_ext/string'
 
 module Fonetica
   extend self
-  
+
   mattr_accessor :replacements, :instance_writer => false
-  
+
   self.replacements = [
     ['Y', 'I'],
     [/BR|BL/, 'B'],
@@ -33,15 +33,15 @@ module Fonetica
     ['L', 'R'],
     [/[AEIOUH]/, '']
   ]
-  
+
   def foneticalize(word)
     result = word.to_s.gsub(/ç/i, 's')
     result = I18n.transliterate(result).upcase
-    
+
     replacements.each do |search, replace|
       result.gsub!(search, replace)
     end
-    
+
     result.squeeze
   end
 end
