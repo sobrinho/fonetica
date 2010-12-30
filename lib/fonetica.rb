@@ -35,7 +35,7 @@ module Fonetica
   ]
 
   def foneticalize(word)
-    result = word.to_s.gsub(/ç/i, 's')
+    result = word.gsub(/ç/i, 's')
     result = I18n.transliterate(result).upcase
 
     replacements.each do |search, replace|
