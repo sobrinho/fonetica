@@ -1,0 +1,24 @@
+* Use Test::Unit instead of RSpec
+
+0.3.1 [Wed Dec 22 2010]
+
+* Update gemspec summary
+
+0.3.0 [Wed Dec 22 2010]
+
+* Dropped activerecord support
+* Rename fonetica method to foneticalize
+* Extract alghoritm to fonetica module
+
+0.2.0 [Mon Oct 18 2010]
+
+* Catch case baptista and batista
+* Cache column renamed from "attribute_fonetica" to "fonetica_attribute"
+
+0.1.1 [Sat Oct 16 2010]
+
+* Fix gemspec homepage, summary and description
+
+0.1.0 [Sat Oct 16 2010]
+
+* First release
