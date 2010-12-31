@@ -16,5 +16,4 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.add_dependency(%q<activesupport>, [">= 3.0.0"])
   s.add_dependency(%q<i18n>, [">= 0.4.1"])
-  s.add_development_dependency(%q<rspec>, [">= 2.0.0"])
 end

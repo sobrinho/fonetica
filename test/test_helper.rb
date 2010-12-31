@@ -1,3 +1,5 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'fonetica'
+require 'test/unit'
+require 'active_support/test_case'
