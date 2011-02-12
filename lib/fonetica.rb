@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'i18n'
 require 'active_support/core_ext/module/attribute_accessors'
 require 'active_support/inflector/transliterate'
