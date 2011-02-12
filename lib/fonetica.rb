@@ -1,13 +1,14 @@
 # encoding: utf-8
+require 'singleton'
 require 'i18n'
-require 'active_support/core_ext/module/attribute_accessors'
+require 'active_support/core_ext/class/attribute'
 require 'active_support/inflector/transliterate'
 require 'fonetica/core_ext/string'
 
-module Fonetica
-  extend self
+class Fonetica
+  include Singleton
 
-  mattr_accessor :replacements, :instance_writer => false
+  class_attribute :replacements
 
   self.replacements = [
     ['Y', 'I'],

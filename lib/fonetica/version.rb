@@ -1,4 +1,4 @@
-module Fonetica
+class Fonetica
   module Version #:nodoc:
     MAJOR = 0
     MINOR = 3

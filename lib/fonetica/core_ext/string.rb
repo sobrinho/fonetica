@@ -1,5 +1,5 @@
 class String
   def foneticalize
-    Fonetica.foneticalize(self)
+    Fonetica.instance.foneticalize(self)
   end
 end
