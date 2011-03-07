@@ -11,10 +11,10 @@ Then Google suggested me to read the "BuscaBR algorithm":http://www.unibratec.co
 h2. Usage
 
 <pre>
-  require 'fonetica'
+require 'fonetica'
 
-  'Wagner Batista'.foneticalize #=> "VM BT"
-  'Vagner Baptista'.foneticalize #=> "VM BT"
+'Wagner Batista'.foneticalize #=> "VM BT"
+'Vagner Baptista'.foneticalize #=> "VM BT"
 </pre>
 
 h3. Using with ActiveRecord
@@ -22,23 +22,23 @@ h3. Using with ActiveRecord
 You can use the fonetica to search on ActiveRecord like this:
 
 <pre>
-  class Person < ActiveRecord::Base
-    scope :search, lambda { |name| where("#{quoted_table_name}.fonetica LIKE ?", "#{name.foneticalize}%") }
+class Person < ActiveRecord::Base
+  scope :search, lambda { |name| where("#{quoted_table_name}.fonetica LIKE ?", "#{name.foneticalize}%") }
 
-    before_save :foneticalize
+  before_save :foneticalize
 
-    protected
+  protected
 
-    def foneticalize
-      self.fonetica = name.foneticalize
-    end
+  def foneticalize
+    self.fonetica = name.foneticalize
   end
+end
 </pre>
 
 If you want to match any part, you should change scope to:
 
 <pre>
-  scope :search, lambda { |name| where("#{quoted_table_name}.fonetica LIKE ?", "%#{name.foneticalize}%") }
+scope :search, lambda { |name| where("#{quoted_table_name}.fonetica LIKE ?", "%#{name.foneticalize}%") }
 </pre>
 
 Remember to add a index on fonetica column.
@@ -52,10 +52,10 @@ Please also keep your commits *atomic* so that they are more likely to apply cle
 h2. Development environment
 
 <pre>
-  $ git clone http://github.com/sobrinho/fonetica
-  $ cd fonetica
-  $ bundle install
-  $ rake test
+$ git clone http://github.com/sobrinho/fonetica
+$ cd fonetica
+$ bundle install
+$ rake test
 </pre>
 
 h2. Project info
