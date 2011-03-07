@@ -13,8 +13,8 @@ h2. Usage
 <pre>
 require 'fonetica'
 
-'Wagner Batista'.foneticalize #=> "VM BT"
-'Vagner Baptista'.foneticalize #=> "VM BT"
+'wagner batista'.foneticalize #=> "VM BT"
+'vagner baptista'.foneticalize #=> "VM BT"
 </pre>
 
 h3. Using with ActiveRecord
