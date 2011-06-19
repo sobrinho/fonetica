@@ -1,3 +1,21 @@
+1.0.0 [unreleased]
+
+* Use replacements table proposed by Marcos Rodrigues Caso (see:
+http://caso.somee.com/siteTCC/docs/TCCMarcosRC.pdf)
+
+  This change will catch current cases and more like 'willian' and 'uillian'
+
+  Note that this change is backwards-incompatible. But you can update your
+  database using a rake task like that:
+
+    task :update_fonetica => :environment do
+      Person.transaction do
+        Person.find_each do |person|
+          person.update_attribute(:fonetica, person.name.foneticalize)
+        end
+      end
+    end
+
 0.4.0 [Sat Feb 12 2010]
 
 * Compatibility with Ruby 1.9
