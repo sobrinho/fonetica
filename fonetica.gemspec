@@ -4,7 +4,7 @@ require "fonetica/version"
 
 Gem::Specification.new do |s|
   s.name        = "fonetica"
-  s.version     = Fonetica::Version::STRING
+  s.version     = Fonetica::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Gabriel Sobrinho"]
   s.email       = ["gabriel.sobrinho@gmail.com"]
