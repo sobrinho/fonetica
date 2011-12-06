@@ -1,3 +1,9 @@
+master
+
+* Handle more than one 'M' at end of word (ie: alissonn)
+
+  Thanks @vyper!
+
 1.0.0 [Sun Jun 19 2011]
 
 * Use replacements table proposed by Marcos Rodrigues Caso (see:

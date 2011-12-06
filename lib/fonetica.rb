@@ -26,7 +26,7 @@ class Fonetica
     [/CT|RT|ST|PT/, 'T'],
     [/\b[UW]/, 'V'],
     ['RM', 'SM'],
-    [/[MRS]\b/, ''],
+    [/[MRS]+\b/, ''],
     [/[AEIOUH]/, '']
   ]
 

@@ -150,6 +150,10 @@ class FoneticaTest < Test::Unit::TestCase
     assert_fonetica 'batista', 'baptista'
   end
 
+  def test_alisson_and_allissonn
+    assert_fonetica 'alison', 'allisonn'
+  end
+
   protected
 
   def assert_fonetica(first, second)
