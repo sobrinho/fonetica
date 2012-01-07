@@ -52,7 +52,7 @@ Please also keep your commits *atomic* so that they are more likely to apply cle
 h2. Development environment
 
 <pre>
-$ git clone http://github.com/sobrinho/fonetica
+$ git clone https://github.com/nohupbrasil/fonetica
 $ cd fonetica
 $ bundle install
 $ rake test
@@ -60,7 +60,7 @@ $ rake test
 
 h2. Project info
 
-Fonetica is hosted on Github: "http://github.com/sobrinho/fonetica":http://github.com/sobrinho/fonetica, where your contributions, forkings, comments and feedback are greatly welcomed.
+Fonetica is hosted on Github: "https://github.com/nohupbrasil/fonetica":https://github.com/nohupbrasil/fonetica, where your contributions, forkings, comments and feedback are greatly welcomed.
 
 
-Copyright (c) 2010 Gabriel Sobrinho, released under the MIT license.
+Copyright (c) 2010-2012 nohup brasil, released under the MIT license.

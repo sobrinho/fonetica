@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Gabriel Sobrinho"]
   s.email       = ["gabriel.sobrinho@gmail.com"]
-  s.homepage    = "http://github.com/sobrinho/fonetica"
+  s.homepage    = "https://github.com/nohupbrasil/fonetica"
   s.summary     = %q{BuscaBR algorithm which allow the comparison of words based on their phonetic likeness}
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
