@@ -10,39 +10,47 @@ Then Google suggested me to read the [BuscaBR algorithm](http://www.unibratec.co
 
 ## Usage
 
-    require 'fonetica'
+``` ruby
+require 'fonetica'
 
-    'wagner batista'.foneticalize #=> "VM BT"
-    'vagner baptista'.foneticalize #=> "VM BT"
+'wagner batista'.foneticalize #=> "VM BT"
+'vagner baptista'.foneticalize #=> "VM BT"
+```
 
 ### Using with ActiveRecord
 
 You can use the fonetica to search on ActiveRecord like this:
 
-    class Person < ActiveRecord::Base
-      scope :search, lambda { |name| where(arel_table[:fonetica].matches("#{name.foneticalize}%")) }
+``` ruby
+class Person < ActiveRecord::Base
+  scope :search, lambda { |name| where(arel_table[:fonetica].matches("#{name.foneticalize}%")) }
 
-      before_save :foneticalize
+  before_save :foneticalize
 
-      protected
+  protected
 
-      def foneticalize
-        self.fonetica = name.foneticalize
-      end
-    end
+  def foneticalize
+    self.fonetica = name.foneticalize
+  end
+end
+```
 
 If you want to match any part, you should change scope to:
 
-    scope :search, lambda { |name| where(arel_table[:fonetica].matches("%#{name.foneticalize}%")) }
+``` ruby
+scope :search, lambda { |name| where(arel_table[:fonetica].matches("%#{name.foneticalize}%")) }
+```
 
 Remember to add a index on fonetica column:
 
-    class AddFoneticaToPeople < ActiveRecord::Migration
-      def change
-        add_column :people, :fonetica, :string
-        add_index :people, :fonetica
-      end
-    end
+``` ruby
+class AddFoneticaToPeople < ActiveRecord::Migration
+  def change
+    add_column :people, :fonetica, :string
+    add_index :people, :fonetica
+  end
+end
+````
 
 ## How to contribute
 
@@ -52,10 +60,12 @@ Please also keep your commits **atomic** so that they are more likely to apply c
 
 ## Development environment
 
-    $ git clone https://github.com/nohupbrasil/fonetica
-    $ cd fonetica
-    $ bundle install
-    $ rake test
+``` bash
+$ git clone https://github.com/nohupbrasil/fonetica
+$ cd fonetica
+$ bundle install
+$ rake test
+```
 
 ## License
 
