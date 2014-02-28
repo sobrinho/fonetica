@@ -61,7 +61,7 @@ Please also keep your commits **atomic** so that they are more likely to apply c
 ## Development environment
 
 ``` bash
-$ git clone https://github.com/nohupbrasil/fonetica
+$ git clone https://github.com/sobrinho/fonetica
 $ cd fonetica
 $ bundle install
 $ rake test
@@ -69,6 +69,6 @@ $ rake test
 
 ## License
 
-Fonetica is hosted on Github: https://github.com/nohupbrasil/fonetica, where your contributions, forkings, comments and feedback are greatly welcomed.
+Fonetica is hosted on Github: https://github.com/sobrinho/fonetica, where your contributions, forkings, comments and feedback are greatly welcomed.
 
-Copyright (c) 2010-2012 nohup brasil, released under the MIT license.
+Copyright (c) 2010-2014 Gabriel Sobrinho, released under the MIT license.
