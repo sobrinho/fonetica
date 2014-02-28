@@ -23,9 +23,11 @@ You can use the fonetica to search on ActiveRecord like this:
 
 ``` ruby
 class Person < ActiveRecord::Base
-  scope :search, lambda { |name| where(arel_table[:fonetica].matches("#{name.foneticalize}%")) }
-
   before_save :foneticalize
+
+  def self.search(name)
+    where(arel_table[:fonetica].matches("#{name.foneticalize}%"))
+  end
 
   protected
 
@@ -38,7 +40,9 @@ end
 If you want to match any part, you should change scope to:
 
 ``` ruby
-scope :search, lambda { |name| where(arel_table[:fonetica].matches("%#{name.foneticalize}%")) }
+def self.search
+  where(arel_table[:fonetica].matches("%#{name.foneticalize}%"))
+end
 ```
 
 Remember to add a index on fonetica column:
