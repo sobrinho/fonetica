@@ -6,7 +6,7 @@ Fonetica implements the [BuscaBR algorithm](http://www.unibratec.com.br/jornadac
 
 One day I had to perform a phonetic search on a people database using the [Soundex alghoritm](http://en.wikipedia.org/wiki/Soundex) but didn't work for names at Brazil like "Wagner Batista" and "Vagner Baptista".
 
-Then Google suggested me to read the [BuscaBR algorithm](http://www.unibratec.com.br/jornadacientifica/diretorio/NOVOB.pdf).
+Then Google suggested me to read the [BuscaBR algorithm](http://www.unibratec.com.br/jornadacientifica/diretorio/NOVOB.pdf).  Backup link of [BuscaBR algorithm on Internet Archive](https://web.archive.org/web/20100401020325/http://www.unibratec.com.br/jornadacientifica/diretorio/NOVOB.pdf)
 
 ## Usage
 
