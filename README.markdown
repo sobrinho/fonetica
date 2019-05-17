@@ -1,6 +1,6 @@
 # fonetica
 
-Fonetica implements the [BuscaBR algorithm](http://www.unibratec.com.br/jornadacientifica/diretorio/NOVOB.pdf) to match misspelled or ambiguous names at Brazil.
+Fonetica implements the [BuscaBR algorithm](https://web.archive.org/web/20100401020325/http://www.unibratec.com.br/jornadacientifica/diretorio/NOVOB.pdf) to match misspelled or ambiguous names at Brazil.
 
 ## The Story
 
