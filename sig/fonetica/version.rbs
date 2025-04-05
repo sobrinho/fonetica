@@ -1,0 +1,3 @@
+class Fonetica
+  VERSION: String
+end

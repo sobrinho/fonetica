@@ -1,0 +1,14 @@
+type replacements = Array[[Regexp | String, String]]
+
+class Fonetica
+  include Singleton
+
+  attr_accessor self.replacements: replacements
+  attr_accessor replacements: replacements
+
+  # include Singleton is not working on RBS properly
+  # See https://github.com/ruby/rbs/issues/1498
+  def self.instance: () -> Fonetica
+
+  def foneticalize: (String word) -> String
+end
