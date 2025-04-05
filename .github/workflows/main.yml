@@ -23,7 +23,9 @@ jobs:
           bundler-cache: true
       - name: Install dependencies
         run: bundle install
+      - name: Install RBS collections
+        run: bundle exec rbs collection install
       - name: Run tests
         run: bundle exec rake
-      - name: Run typing
+      - name: Run type checking
         run: bundle exec steep check
